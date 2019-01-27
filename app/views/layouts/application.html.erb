@@ -15,18 +15,18 @@
     <td>
       <h2>Booker</h2>
     </td>
-<td><%= link_to " Home" , user_path(current_user),class:"home" ,class:"glyphicon glyphicon-home" %></td>
-<td><%= link_to " Users" , users_path, class:"users",class:"glyphicon glyphicon-user" %></td>
-<td><%= link_to " Books" , books_path, class:"books" ,class:"glyphicon glyphicon-book"%></td>
-<td><%= link_to " logout" , destroy_user_session_path, class:"logout", method: :delete ,class:"glyphicon glyphicon-log-out"%></td>
+<td><%= link_to " Home" , user_path(current_user),class: "home" ,class:"glyphicon glyphicon-home" %></td>
+<td><%= link_to " Users" , users_path, class:"users",class: "glyphicon glyphicon-user" %></td>
+<td><%= link_to " Books" , books_path, class:"books" ,class: "glyphicon glyphicon-book"%></td>
+<td><%= link_to " logout" , destroy_user_session_path, class: "logout", method: :delete ,class:"glyphicon glyphicon-log-out"%></td>
 </tr>
 </tbody>
 
 <% else %>
-<%= link_to " Home" , root_path, class:"home",class:"glyphicon glyphicon-home" %>
-<%= link_to " About", home_path, class:"about"  ,class:"glyphicon glyphicon-link" %>
-<%= link_to " sign up" , new_user_registration_path, class:"sign_up",class:"glyphicon glyphicon-edit" %>
-<%= link_to " login" , new_user_session_path, class:"sign_in",class:"glyphicon glyphicon-log-in" %>
+<%= link_to " Home" , root_path, class: "home",class:"glyphicon glyphicon-home" %>
+<%= link_to " About", home_path, class: "about"  ,class:"glyphicon glyphicon-link" %>
+<%= link_to " sign up" , new_user_registration_path, class: "sign_up",class:"glyphicon glyphicon-edit" %>
+<%= link_to " login" , new_user_session_path, class: "sign_in",class:"glyphicon glyphicon-log-in" %>
 
 
 <% end %>
