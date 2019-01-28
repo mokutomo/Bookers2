@@ -21,9 +21,9 @@
 
 						<%if @book.user == current_user%>
 
-						<td><%= link_to "Edit", edit_book_path(@book), class: "edit_book_#{@book}", class: "btn btn-success" %>
+						<td><%= link_to "Edit", edit_book_path(@book), class: "edit_book_#{@book} btn btn-success" %>
 						</td>
-						<td><%= link_to "Destroy", book_path(@book), class: "destroy_book_#{@book}",method: :delete,class: "btn btn-danger" %></td>
+						<td><%= link_to "Destroy", book_path(@book), class: "destroy_book_#{@book} btn btn-danger",method: :delete %></td>
 						<%end%>
 					</tr>
 				</tbody>
