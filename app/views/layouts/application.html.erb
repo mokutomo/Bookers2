@@ -18,7 +18,7 @@
 <td><%= link_to " Home" , user_path(current_user),class: "home glyphicon glyphicon-home" %></td>
 <td><%= link_to " Users" , users_path, class: "users glyphicon glyphicon-user" %></td>
 <td><%= link_to " Books" , books_path, class: "books glyphicon glyphicon-book"%></td>
-<td><%= link_to " logout" , destroy_user_session_path, class: "logout glyphicon glyphicon-log-out"%></td>
+<td><%= link_to " logout" , destroy_user_session_path,method: :delete, class: "logout glyphicon glyphicon-log-out"%></td>
 </tr>
 </tbody>
 
